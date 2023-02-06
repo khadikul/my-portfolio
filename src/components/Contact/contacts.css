@@ -1,0 +1,75 @@
+.container.contacts__container{
+    width: 58%;
+    display: grid;
+    grid-template-columns: 30% 58%;
+    gap: 12%;
+}
+
+.contact__options{
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+
+}
+
+.options__box{
+    background: var(--color-bg-varient);
+    padding: 1.2rem;
+    border-radius: 1.2rem;
+    text-align: center;
+    border: .1rem solid transparent;
+    transition: var(--transition);
+}
+
+.options__box:hover{
+    background: transparent;
+    border-color: var(--color-primary-varient);
+}
+
+.options__box img{
+    width: 20%;
+    border-radius: 100%;
+    margin: auto;
+}
+
+.options__box .fiverr{
+    width: 50%;
+}
+
+.options__box a{
+    margin-top: .7rem;
+    font-size: .8rem;
+}
+
+/*form  */
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+input, textarea{
+    width: 100%;
+    padding: 1.5rem;
+    border-radius: .5rem;
+    background: transparent;
+    border: .2rem solid var(--color-primary-varient);
+    resize: none;
+    color: white;
+    font-size: 1rem;
+    letter-spacing: .1rem;
+}
+
+/*======================= REPONSIVE ==================*/
+@media screen and (max-width: 1024px) {
+    .container.contacts__container{
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .container.contacts__container{
+        width: var(--container-width-sm);
+    }
+}
